@@ -1,0 +1,25 @@
+public class BookDetails {
+    private String title;
+    private String author;
+    private String genre;
+    private int year;
+
+    public BookDetails(String title, String author, String genre, int year) {
+        this.title = title;
+        this.author = author;
+        this.genre = genre;
+        this.year = year;
+    }
+
+    public void displayBookDetails() {
+        System.out.println("Book Name: " + title);
+        System.out.println("Author: " + author);
+        System.out.println("Genre: " + genre);
+        System.out.println("Year Published: " + year);
+    }
+
+    public static void main(String[] args) {
+        BookDetails book = new BookDetails("The Appeal", "John Grisham", "Fiction", 2000);
+        book.displayBookDetails();
+    }
+}
